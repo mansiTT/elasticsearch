@@ -138,4 +138,47 @@ Response 200 :
 }
 ```
 
+### Count documents in index
+
+```javascript
+http://localhost:9200/employee/_count
+```
+
+Response 200:
+
+{
+    "count": 1,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    }
+}
+
+### Search with From/Size (Pagination)
+
+```javascript
+curl --location --request GET 'http://localhost:9200/employee/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "from" : 0, "size" : 100
+}'
+```
+
+### Search with Criteria
+
+```javascript
+curl --location --request GET 'http://localhost:9200/employee/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "query": {
+        "match" : {
+            "firstname" : "John"
+        }
+    }
+}'
+```
+
+
 
