@@ -143,7 +143,7 @@ Response 200 :
 ```javascript
 http://localhost:9200/employee/_count
 ```
-
+```
 Response 200:
 
 {
@@ -155,6 +155,7 @@ Response 200:
         "failed": 0
     }
 }
+```
 
 ### Search with From/Size (Pagination)
 
