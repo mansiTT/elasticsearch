@@ -4,7 +4,7 @@
 ### List indexes
 
 ```javascript
-curl --location --request PUT 'http://localhost:9200/_cat/indices' 
+curl --location --request GET 'http://localhost:9200/_cat/indices' 
 ```
 
 ### Create Index CURL :
