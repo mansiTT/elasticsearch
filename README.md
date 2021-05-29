@@ -13,9 +13,8 @@ curl --location --request GET 'http://localhost:9200/_cat/indices'
 curl --location --request PUT 'http://localhost:9200/employee' 
 
 Response 200:
-```
 {"acknowledged":true,"shards_acknowledged":true,"index":"employee"}
-```
+
 ```
 
 
