@@ -1,6 +1,12 @@
 
 # Elasticsearch Frequently used commands
 
+### List indexes
+
+```javascript
+curl --location --request PUT 'http://localhost:9200/_cat/indices' 
+```
+
 ### Create Index CURL :
 
 ```javascript
