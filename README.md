@@ -56,9 +56,9 @@ curl --location --request POST 'http://localhost:9200/employee/_doc' \
         }
     ]
 }'
-```
+
 Response 201 :
-```
+
 {
     "_index": "employee",
     "_type": "_doc",
@@ -81,10 +81,9 @@ Response 201 :
 
 ```javascript
 curl --location --request GET 'http://localhost:9200/employee/_search' 
-```
 
 Response 200 :
-```
+
 {
     "took": 1144,
     "timed_out": false,
@@ -143,14 +142,16 @@ Response 200 :
         ]
     }
 }
+
 ```
+
+
 
 ### Count documents in index
 
 ```javascript
 http://localhost:9200/employee/_count
-```
-```
+
 Response 200:
 
 {
